@@ -386,7 +386,8 @@ function prebuild(){
 
     var projectLocation = config.projectLocation;
     var projectDirectory = path.basename(projectLocation);
-
+	console.log("config::::::"+JSON.stringify(config));
+	console.log("path::::::"+JSON.stringify(path));
     if(showHelpContent) {
         printHelpContent();
     } else if(isDownloadRequired) {
