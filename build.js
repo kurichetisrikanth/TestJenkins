@@ -384,11 +384,11 @@ function prebuild(){
         isDownloadRequired = false;
     }
 
-    var projectLocation = config.projectLocation;
-    var projectDirectory = path.basename(projectLocation);
+    //var projectLocation = config.projectLocation;
+    //var projectDirectory = path.basename(projectLocation);
+    var projectDirectory = config.projectName;
 	console.log("config::::::"+JSON.stringify(config));
-	console.log("path::::::"+JSON.stringify(path));
-    if(showHelpContent) {
+	if(showHelpContent) {
         printHelpContent();
     } else if(isDownloadRequired) {
         __preBuildValidation__({projectDir : projectDirectory});
