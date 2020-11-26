@@ -483,7 +483,7 @@ function __preBuildValidation__(params) {
     if(projectName === null || projectName === "") {
         throw new BuildException(`Set the project name in HeadlessBuild.properties`, 50);
     }
-
+	console.log('params are::::'+params);
     if(projectName !== params.projectDir) {
         throw new BuildException(`ProjectName '${projectName}' 
                 is not matching with project directory name '${params.projectDir}'`, 50);               
